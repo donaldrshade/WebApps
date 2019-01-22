@@ -1,0 +1,18 @@
+.background{
+    background: #CC0000;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    flex:1;
+    margin: 0 auto;
+    flex-direction: column;
+    background: #FF0000;
+}
+.body{
+    display: flex;
+    flex:3;
+}
