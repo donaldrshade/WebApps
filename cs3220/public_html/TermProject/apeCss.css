@@ -1,7 +1,7 @@
 body{
     background-color:darkgray;
-    margin:auto;
-    height:100%
+    margin:0;
+    height:100%;
 }
 .content{
     flex-direction: row;
@@ -9,7 +9,8 @@ body{
     border-bottom:5px solid black;
     padding: 0;
     background: #ffffff;
-    
+    margin:0;
+    height: 100%;
 }
 .nav{
     background: #ffffff;
@@ -41,8 +42,8 @@ body{
     margin:5;
 }
 #ape-left{
-    display: flex;
     flex: 1;
+    display: flex;
     flex-direction: column;
 }
 #ape-right{
