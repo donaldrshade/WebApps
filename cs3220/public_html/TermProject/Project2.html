@@ -7,7 +7,16 @@
     <script src="regex.js"></script>
     <body onload="loadData()" >
         <div class = "header">
-            <h1>"APE"</h1>
+            <div id="header-left"><h1>"APE 2.0"</h1></div>
+            <div id="header-right">
+                <div class= "info" id="info-name"></div>
+                <div class= "info" id="info-major"></div>
+                <div class= "info" id="info-plan-name"></div>
+                <div class= "info" id="info-catalog"></div>
+                <div class= "info" id="info-current-sem"></div>
+                
+            </div>
+            
         </div>
         <div class = "content">
             <div id = "ape-left">
@@ -22,9 +31,9 @@
                     </div>
                     <div class = "form" id = "regex">
                         <form name="myForm" onsubmit="return validateForm()" method="post" action="http://judah.cedarville.edu/echo.php">
-                            Cedarville Email:<input type="text" name = "fEmail" id = "emailInput" onchange="validateForm()" >
+                            Cedarville Email:<input type="text" name = "fEmail" id = "emailInput" onchange="onEmailChange()" >
                             <br>
-                            Message:<input type="text" name = "fmessage">
+                            Message:<input type="text" name = "fmessage" onchange="onMessageChange()" >
                             <br>
                             <input type = "submit" value="Submit">
                         </form>

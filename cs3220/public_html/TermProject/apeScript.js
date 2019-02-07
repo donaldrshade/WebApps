@@ -150,7 +150,7 @@ class plan {
         return this.catalogYear;
     }
     getCurrentSemester(){
-        return this.currentSemester();
+        return this.currentSemester;
     }
     getCourses(){
         return this.courses;
@@ -223,4 +223,14 @@ function loadData(){
     var ape = document.getElementById("ape-plan-content");
     var myCourses = new schedule(myPlan.getCourses());
     ape.innerHTML = myCourses.getData();
+    var name = document.getElementById("info-name");
+    name.innerHTML = "Name: " + myPlan.getStudentName();
+    var major = document.getElementById("info-major");
+    major.innerHTML = "Major: "+myPlan.getMajor();
+    var planName = document.getElementById("info-plan-name");
+    planName.innerHTML = "Plan: "+myPlan.getPlan();
+    var catalog = document.getElementById("info-catalog");
+    catalog.innerHTML = "Catalog: "+myPlan.getCatalogYear();
+    var currentSem = document.getElementById("info-current-sem");
+    currentSem.innerHTML = "Current Semester: "+myPlan.getCurrentSemester();
 }

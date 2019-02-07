@@ -4,6 +4,7 @@
     <head>
         <title>Donald Shade</title>
         <link rel="stylesheet" href="Resources/myCss.css" type="text/css">
+        <script src="Resources/menu.js"></script>
         <script src="Resources/quote.js"></script>
     </head>
     <body onload="getQuote()"> 
@@ -14,11 +15,20 @@
             <!--<button type="button" onclick="getQuote()">New Quote</button>-->
         </div>
         <div class = "nav">
+            <div class = "menu">
+                <form>
+                    Projects:
+                    <select id="menuList" onchange="updateOption()">
+                        <option>Project1</option>
+                        <option>Project2</option>
+                    </select>
+                </form>
+            </div>
+            <div class = "nav-link" onclick="gotoPage()">Go</div>
             <a href = "http://judah.cedarville.edu/~shade/cs3220.html"><div class = "nav-link">Home</div></a>
-            <a href = "http://sites.google.com/view/donaldrshadejr"><div class = "nav-link">My Google Site</div></a>
             <a href = "http://judah.cedarville.edu/index.php"><div class = "nav-link">Course Website</div></a>
             <a href = "TermProject/Project1.html"><div class = "nav-link">Project 1</div></a>
-            <a href = "http://judah.cedarville.edu/~shade/TermProject/ProjectNope.html"><div class = "nav-link">Project 2</div></a>
+            <a href = "http://judah.cedarville.edu/~shade/TermProject/Project2.html"><div class = "nav-link">Project 2</div></a>
             <a href = "http://judah.cedarville.edu/~shade/TermProject/ProjectNope.html"><div class = "nav-link">Project 3</div></a>
             <a href = "http://judah.cedarville.edu/~shade/TermProject/ProjectNope.html"><div class = "nav-link">Project 4</div></a>
             <a href = "http://judah.cedarville.edu/~shade/TermProject/ProjectNope.html"><div class = "nav-link">Project 5</div></a>

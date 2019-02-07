@@ -18,6 +18,7 @@ body{
 }
 
 .nav{
+    color:#ffffff;
     justify-content: center;
     display: flex;
     width:85%;
@@ -29,6 +30,16 @@ body{
     padding-left:  20px;
     padding-top:   5px;
     padding-bottom:5px; 
+}
+.menu{
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left:  10px;
+    padding-top:   5px;
+    padding-bottom:5px;
 }
 .nav-link{
     align-content: center;
