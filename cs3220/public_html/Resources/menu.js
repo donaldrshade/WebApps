@@ -5,7 +5,7 @@ function updateOption(){
 }
 function gotoPage(){
     if(selection != ""){
-        var path = 'TermProject/'+selection+".html";
+        var path = '~shade/TermProject/'+selection+".html";
         window.location.pathname = path;
         
     }
