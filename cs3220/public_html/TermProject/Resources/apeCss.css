@@ -1,6 +1,11 @@
 html{
     height: 100%;
     align-content: center;
+    --main-color:#99ddff;
+    --background:#ccccff;
+    --borders:#000000;
+    --accent-color-1:#77bbdd;
+    --accent-color-2:#88ccee;
 }
 
 .nav{
@@ -31,9 +36,8 @@ html{
     border-bottom: 5px solid black;
     padding-top:0px;
     text-align: left;
-    padding-bottom: 5;
     color: #FFFFFF;
-    height:12%;
+    height:13%;
     width:100%;
     display:flex;
 }
@@ -43,9 +47,49 @@ html{
 #header-right{
     flex:1;
 }
+#header-left{
+    flex:5;
+}
+#header-right{
+    flex:2;
+    display: flex;
+    flex-direction: row;
+}
+#student-info{
+    padding-top:2px;
+    padding-bottom: 30px;
+    border:var(--borders);
+    border-style: solid;
+    border-bottom: 0px;
+    border-top:0px;
+    border-width:5px;
+    flex:2;
+    
+}
 .info{
-    background: #000000;
     padding-left: 5px;
+    padding-right:5px;
+    border-bottom: 1px solid var(--borders);
+}
+#info-current-sem{
+    border-bottom: 0px solid black;
+}
+#options{
+    flex:1;
+    text-align: center;
+    margin:20px;
+    margin-top:10px;
+    margin-bottom:10px;    
+}
+.option-button{
+    margin:5px;
+    padding:px;
+    background:var(--accent-color-1);
+    border-radius: 10px;
+    border-style: none;
+}
+.option-button:hover{
+    background:var(--accent-color-2);
 }
 body{
     background-color:darkgray;
@@ -56,7 +100,7 @@ body{
 .content{
     height:95%;
     width:100%;
-    background: #ccccff;
+    background: --background;
     display: flex;
     flex-direction: row;
     border-top:5px solid black;
@@ -72,17 +116,19 @@ body{
 .form{
     text-align: center;
 }
+
 .ape-header{
     padding:2;
     margin-bottom: 5;
-    background: #99ddff;
+    background: var(--main-color);
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
 }
+
 .ape-semester-header{
     padding:2;
-    background: #88ccee;
+    background: var(--accent-color-1);
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
@@ -91,7 +137,7 @@ body{
     text-align: left;
     margin:2px;
     border-radius: 3px;
-    background:#77bbdd;
+    background:var(--accent-color-2);
 }
 .year{
     flex:1;
@@ -116,7 +162,7 @@ body{
     flex: 4;
     display: flex;
     flex-direction: column;
-    border: #000000;
+    border: var(--border);
     border-left: 5px solid black;
 
 }

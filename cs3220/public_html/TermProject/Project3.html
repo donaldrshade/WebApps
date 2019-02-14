@@ -3,17 +3,23 @@
     <meta charset="utf-8">
     <title>Donald Shade - APE</title>
     <link rel="stylesheet" href="Resources/apeCss.css" type="text/css">
-    <script src="JavaScript/apeScript.js"></script>
-    <script src="JavaScript/regex.js"></script>
-    <body onload="loadData()" >
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/apeScript2.js"></script>
+    <body>
         <div class = "header">
             <div id="header-left"><h1>"APE 2.0"</h1></div>
             <div id="header-right">
-                <div class= "info" id="info-name"></div>
-                <div class= "info" id="info-major"></div>
-                <div class= "info" id="info-plan-name"></div>
-                <div class= "info" id="info-catalog"></div>
-                <div class= "info" id="info-current-sem"></div>
+                <div id = "student-info">
+                    <div class= "info" id="info-name"></div>
+                    <div class= "info" id="info-major"></div>
+                    <div class= "info" id="info-plan-name"></div>
+                    <div class= "info" id="info-catalog"></div>
+                    <div class= "info" id="info-current-sem"></div>
+                </div>
+                <div id = "options">
+                    <div class = "option-button">Options</div>
+                    <div class = "option-button" id = "logout">Log Out</div>
+                </div>
             </div> 
         </div>
         <div class = "content">
