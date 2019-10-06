@@ -1,11 +1,11 @@
 html{
     height: 100%;
     align-content: center;
-    --main-color:#99ddff;
+    --main-color:#77bbdd;
     --background:#ccccff;
     --borders:#000000;
-    --accent-color-1:#77bbdd;
-    --accent-color-2:#88ccee;
+    --accent-color-1:#88ccee;
+    --accent-color-2:#99ddff;
 }
 
 .nav{
@@ -42,13 +42,7 @@ html{
     display:flex;
 }
 #header-left{
-    flex:5;
-}
-#header-right{
-    flex:1;
-}
-#header-left{
-    flex:5;
+    flex:3;
 }
 #header-right{
     flex:2;
@@ -64,6 +58,7 @@ html{
     border-top:0px;
     border-width:5px;
     flex:2;
+    overflow:auto;
     
 }
 .info{
@@ -72,7 +67,7 @@ html{
     border-bottom: 1px solid var(--borders);
 }
 #info-current-sem{
-    border-bottom: 0px solid black;
+    border-bottom-width:0px;
 }
 #options{
     flex:1;
@@ -84,12 +79,12 @@ html{
 .option-button{
     margin:5px;
     padding:px;
-    background:var(--accent-color-1);
+    background:var(--main-color);
     border-radius: 10px;
     border-style: none;
 }
 .option-button:hover{
-    background:var(--accent-color-2);
+    background:var(--accent-color-1);
 }
 body{
     background-color:darkgray;
@@ -98,7 +93,7 @@ body{
     margin: auto;
 }
 .content{
-    height:95%;
+    height:88%;
     width:100%;
     background: --background;
     display: flex;
@@ -118,6 +113,7 @@ body{
 }
 
 .ape-header{
+    flex:3;
     padding:2;
     margin-bottom: 5;
     background: var(--main-color);
@@ -126,18 +122,51 @@ body{
     font-weight: bold;
 }
 
-.ape-semester-header{
+.ape-plan-header-encapsulate{
+   display:flex;
+}
+.ape-plan-header{
+    flex:3;
     padding:2;
-    background: var(--accent-color-1);
+    margin-bottom: 5;
+    background: var(--main-color);
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
+}
+.ape-plan-header-credits{
+    flex:1;
+    padding:2;
+    margin-bottom: 5;
+    background: var(--main-color);
+    text-align: center;
+}
+.ape-semester-header{
+    flex:3;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.ape-header-credits{
+    flex:1;
+    padding-right:10px;
+    margin-bottom: 5;
+    text-align: right;
+}
+.ape-header-encapsulate{
+   background: var(--accent-color-1);
+   display:flex;
+   flex-direction: row;
 }
 .ape-class{
     text-align: left;
     margin:2px;
     border-radius: 3px;
     background:var(--accent-color-2);
+    padding:
+}
+.ape-class:hover{
+    background:var(--main-color);
 }
 .year{
     flex:1;
@@ -148,7 +177,8 @@ body{
 .semester{
     text-align: center;
     flex:1;
-    margin:5;
+    margin:5px;
+    overflow:auto;
 }
 #error_message{
     color: red;
@@ -157,6 +187,29 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+h1{
+   padding-left:5px;
+}
+h2{
+   padding-left:5px;
+   margin-top:0px;
+   background:var(--main-color);
+   margin-bottom:0px;
+   border-bottom:2px solid black;
+}
+h3{
+   padding-left:5px;
+   margin-top:0px;
+   background:var(--accent-color-2);
+   text-align:center;
+   margin-bottom:0px;
+   border-bottom:2px solid black;
+   border-top:2px solid black;
+}
+#carButton{
+   padding-left:5px;
+   margin-top:0px;
 }
 #ape-right{
     flex: 4;
@@ -173,6 +226,14 @@ body{
     border-top:2px solid black;
     padding-top:5;
     flex:1;
+    overflow-y:auto;
+}
+form{
+    padding:5px;
+}
+p{
+   margin-top:1px;
+   margin-bottom:1px;
 }
 #ape-upper-right{
     flex:3;
@@ -180,9 +241,12 @@ body{
     flex-direction: column;
 }
 #ape-lower-right{
-    border-top:2px solid black;
+    border-top:2px solid black; 
     flex:1;
 }
 a{
     color:#000000;
+}
+.hidden{
+   display:none;
 }

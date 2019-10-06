@@ -1,0 +1,187 @@
+body{
+    background-image: url("background.jpg");
+    background-color: #000000;
+    margin:5px;
+    overflow:scroll;
+}
+.banner{
+    margin:auto;
+    padding:0;
+    display:block;
+    width:75%;
+}  
+#welcome{
+    width:100%;
+}
+.greeting{
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.interactionButtons{
+    display:flex;
+    flex-direction: vertical;
+}
+.login{
+   display:flex;
+    flex:1;
+    padding-left: 5px;
+    color:#ffffff;
+    font-size: large;
+}
+.view{
+    display:flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    flex:1;
+    padding-left: 5px;
+    color:#ffffff;
+    font-size: large;
+}
+.button{
+    margin:5px;
+}
+.hidden{
+   display:none;
+}
+.content{
+   margin:auto;
+   width:80%;
+   background-color:#ffffff;
+}
+.admin-content{
+   margin:auto;
+   width:80%;
+   background:#444444;
+}
+#interactables{
+   display:flex;
+   background:#000000;
+   padding-right:10px;
+   
+}
+.settings-button{
+   font-size:larger;
+   color:#ffffff;
+   margin-right:10px;
+   padding:10px;
+}
+.settings-button:hover{
+   background:#222222;
+}
+.settings-button-selected{
+   font-size:larger;
+   color:#ffffff;
+   margin-right:10px;
+   padding:10px;
+   background:#333333;
+}
+#settings-content{
+   border-style:solid;
+   border-width:5px;
+   border-color:#333333;
+}
+.slide{
+   
+}
+.hidden{
+   height:0px;
+   width:0px;
+}
+
+.content{
+   background-color: transparent;
+}
+
+.project-table{
+   border-collapse: collapse;
+   width: 100%;
+   border-style: solid;
+   border-color: black;
+}
+
+.table-head{
+   background-color: #5C5C5C;
+   color: white;
+   margin-right: 10px;
+   margin-left: 10px;
+   padding: 10px;
+}
+
+.table-users {
+   background-color: #A6CCDD;
+   border-style: solid;
+   font-weight: bold;
+   font-size: 18px;   
+   text-align: center;
+   height: 65px;
+}
+
+.write-ins {
+   background-color: #5771B9;
+   color: white;
+   text-align: center;
+   margin: 0 auto;
+   width: 75%;
+   border-style: solid;
+   
+}
+
+.write-in-head {
+   margin: 0 auto;
+   color: white;
+}
+
+table{
+   margin:auto;
+}
+tr{
+   margin:auto;
+}
+td{
+   padding:10px;
+}
+a{
+   color:inherit;
+   text-decoration:inherit;
+}
+footer{
+   margin:auto;
+   background-color:#5c5c5c;
+   width:80%;
+   margin-top:20px;
+   display:flex;
+}
+.footer-flex{
+   flex:1;
+   text-align:center;
+   padding-top:10px;
+   padding-bottom:10px;
+   font-weight: bold;
+}
+form{
+   margin-block-end:0px;
+}
+#write-in-submit {
+   padding: 20px;
+}
+.vote {
+   background-color: #5771B9;
+   color: white;
+   text-align: center;
+   margin: 0 auto;
+   width: 75%;
+   border-style: solid;
+}
+#gold-medal {
+   color: #D7BE20;
+}
+#silver-medal {
+   color: #E5E5E4;
+}
+
+#bronze-medal {
+   color: #D17E36;
+}

@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" >
-    <meta charset="utf-8">
+    <meta charset="utf-8" CONTENT="NO-CACHE">
     <title>Donald Shade - APE</title>
     <link rel="stylesheet" href="Resources/apeCss.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" type="text/css">
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="js/apeScript2.js"></script>
     <body>
         <div class = "header">
-            <div id="header-left"><h1>"APE 2.0"</h1></div>
+            <div id="header-left"><h1>95% APE 3.0</h1></div>
             <div id="header-right">
                 <div id = "student-info">
                     <div class= "info" id="info-name"></div>
                     <div class= "info" id="info-major"></div>
                     <div class= "info" id="info-plan-name"></div>
-                    <div class= "info" id="info-catalog"></div>
-                    <div class= "info" id="info-current-sem"></div>
+                    <div class= "info" id="info-cat"></div>
+                    <div class= "info" id="info-curr-sem"></div>
                 </div>
                 <div id = "options">
                     <div class = "option-button">Options</div>
+                    <div class = "option-button" id = "peoples-choice">Course Website</div>
                     <div class = "option-button" id = "logout">Log Out</div>
                 </div>
             </div> 
@@ -25,13 +29,24 @@
         <div class = "content">
             <div id = "ape-left">
                 <div id = "ape-upper-left">
-                    
+                    <h2>Plan Requirements</h2>
+                    <div id = "req-accordion">
+                    </div>
                 </div>
                 <div id = "ape-lower-left">
-                    <div class = "nav">
-                        <p><a href = "../cs3220.html">Home</a></p>
-                        <p><a href = "http://judah.cedarville.edu/index.php">Course Website</a></p>
-                    </div>
+                    <h2>KBB</h2>
+                    <form>
+                       Year:<select id="yearList">
+                           <option>select</option>
+                       </select>
+                       <p class = "KBBSELECT">Make:<select id="makeList">
+                           <option>select</option>
+                       </select>
+                       <p class = "KBBSELECT">Model:<select id="modelList">
+                           <option>select</option>
+                       </select>
+                   </form>
+                   <button id = "carButton">Find Car</button>
                 </div>
             </div>
             <div id = "ape-right">
@@ -40,6 +55,19 @@
                     <div id = "ape-plan-content"></div>
                 </div>
                 <div id = "ape-lower-right">
+                  <div class = "ape-header">Catalog</div>
+                  <div class = "scrolltable">
+                     <table id = "catalog-table">
+                        <thead>
+                           <tr>
+                              <th class = "id">Course ID</th>
+                              <th class = "catalog-table-name">Title</th>
+                              <th class = "desc">Description</th>
+                              <th class = "credits">Credits</th>
+                           </tr>
+                        </thead>
+                     </table>
+                  </div>
                 </div>
             </div>
         </div>

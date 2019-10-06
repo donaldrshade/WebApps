@@ -1,0 +1,70 @@
+<?php
+   ini_set('display_errors', 'On');
+   error_reporting(E_ALL);
+   session_start();
+
+   function debugToConsole($msg) { 
+        echo "<script>console.log(".json_encode($msg).")</script>";
+   }
+   
+   $goldTeamId = $_POST['gold'];
+   $silverTeamId = $_POST['silver'];
+   $bronzeTeamId = $_POST['bronze'];
+   $writeIn = $_POST['writeIn'];
+   $writeIn_team = $_POST['vote_teams'];
+   $projectID = $_SESSION['projectId'];
+   $username = $_SESSION["PCusername"];
+   
+   $db = mysqli_connect("james.cedarville.edu","cs3220","","cs3220_Sp19") or die("Error: unable to connect to database");
+    
+   debugToConsole($goldTeamId);
+   debugToConsole($silverTeamId);
+   debugToConsole($bronzeTeamId);
+   debugToConsole($projectID);
+   debugToConsole($username);
+   
+   $query = $db->prepare('SELECT user_id FROM purpleBlob_user WHERE username = ?') or die("BUST");
+   $query->bind_param("s",$username);
+   $query->execute();
+   $query->store_result();
+   $query->bind_result($user_id);
+   $query->fetch();
+   
+   $query->close();
+   
+   $query = $db->prepare('SELECT count(vote_id) FROM purpleBlob_vote WHERE project_id = ? and user_id = ?') or die("BUST");
+   $query->bind_param("ii",$projectID, $user_id);
+   $query->execute();
+   $query->store_result();
+   $query->bind_result($voted);
+   $query->fetch();
+   
+      //write ins
+      debugToConsole($projectID);
+      debugToConsole($user_id);
+      debugToConsole($writeIn_team);
+      debugToConsole(gettype($writeIn));
+      if($voted == 0 ){
+            $query = $db->prepare('INSERT INTO purpleBlob_vote (user_id, project_id, gold_team_id, silver_team_id, bronze_team_id) VALUES (?, ?, ?, ?, ?)') or die("BUST");
+            $query->bind_param("iiiii", $user_id, $projectID, $goldTeamId,$silverTeamId,$bronzeTeamId);
+            $query->execute();
+            $query->close();
+      
+      }
+   
+   if($writeIn != ''){
+      $query = $db->prepare('INSERT INTO purpleBlob_writeIn (project_id, team_id, value) VALUES (?, ?, ?)') or die("BUST");
+      $query->bind_param("iis", $projectID, $writeIn_team, $writeIn);
+      $query->execute();
+      $query->close();
+
+   }
+
+   //some check to make sure that he doesnt enter duplicate
+
+   
+   
+   header("Location: Project5.php");
+die();
+
+?>

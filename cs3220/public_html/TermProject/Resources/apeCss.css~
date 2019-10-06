@@ -1,0 +1,254 @@
+html{
+    height: 100%;
+    align-content: center;
+    --main-color:#77bbdd;
+    --background:#ccccff;
+    --borders:#000000;
+    --accent-color-1:#88ccee;
+    --accent-color-2:#99ddff;
+}
+
+.nav{
+    flex:1;
+    flex-direction: column;
+    border-right: 5px solid black;
+    text-decoration-color: aqua;
+    text-align: center;
+}
+.body{
+    flex:4;
+    display: flex;
+    padding-left:5;
+
+}
+.footer{
+    color:aliceblue;
+    border-top: 5px solid black;
+    padding-top: 5;
+    padding-left:5;
+    align-self:  bottom;
+}
+#nav{
+    list-style: none;
+}
+/*Comment*/
+.header{
+    border-bottom: 5px solid black;
+    padding-top:0px;
+    text-align: left;
+    color: #FFFFFF;
+    height:13%;
+    width:100%;
+    display:flex;
+}
+#header-left{
+    flex:3;
+}
+#header-right{
+    flex:2;
+    display: flex;
+    flex-direction: row;
+}
+#student-info{
+    padding-top:2px;
+    padding-bottom: 30px;
+    border:var(--borders);
+    border-style: solid;
+    border-bottom: 0px;
+    border-top:0px;
+    border-width:5px;
+    flex:2;
+    overflow:auto;
+    
+}
+.info{
+    padding-left: 5px;
+    padding-right:5px;
+    border-bottom: 1px solid var(--borders);
+}
+#info-current-sem{
+    border-bottom-width:0px;
+}
+#options{
+    flex:1;
+    text-align: center;
+    margin:20px;
+    margin-top:10px;
+    margin-bottom:10px;    
+}
+.option-button{
+    margin:5px;
+    padding:px;
+    background:var(--main-color);
+    border-radius: 10px;
+    border-style: none;
+}
+.option-button:hover{
+    background:var(--accent-color-1);
+}
+body{
+    background-color:darkgray;
+    margin:0;
+    height:96%;
+    margin: auto;
+}
+.content{
+    height:88%;
+    width:100%;
+    background: --background;
+    display: flex;
+    flex-direction: row;
+    border-top:5px solid black;
+    border-bottom:7px solid black;
+    padding: 0;
+    background: #ffffff;
+    margin:0;
+}
+.nav{
+    background: #ffffff;
+    border-right-width: 0px;
+}
+.form{
+    text-align: center;
+}
+
+.ape-header{
+    flex:3;
+    padding:2;
+    margin-bottom: 5;
+    background: var(--main-color);
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.ape-plan-header-encapsulate{
+   display:flex;
+}
+.ape-plan-header{
+    flex:3;
+    padding:2;
+    margin-bottom: 5;
+    background: var(--main-color);
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.ape-plan-header-credits{
+    flex:1;
+    padding:2;
+    margin-bottom: 5;
+    background: var(--main-color);
+    text-align: center;
+}
+.ape-semester-header{
+    flex:3;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.ape-header-credits{
+    flex:1;
+    padding-right:10px;
+    margin-bottom: 5;
+    text-align: right;
+}
+.ape-header-encapsulate{
+   background: var(--accent-color-1);
+   display:flex;
+   flex-direction: row;
+}
+.ape-class{
+    text-align: left;
+    margin:2px;
+    border-radius: 3px;
+    background:var(--accent-color-2);
+    padding:
+}
+.ape-class:hover{
+    background:var(--main-color);
+}
+.year{
+    flex:1;
+    padding: 5;
+    display: flex;
+    flex-direction: row;
+}
+.semester{
+    text-align: center;
+    flex:1;
+    margin:5px;
+    overflow:auto;
+}
+#error_message{
+    color: red;
+}
+#ape-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+   padding-left:5px;
+}
+h2{
+   padding-left:5px;
+   margin-top:0px;
+   background:var(--main-color);
+   margin-bottom:0px;
+   border-bottom:2px solid black;
+}
+h3{
+   padding-left:5px;
+   margin-top:0px;
+   background:var(--accent-color-2);
+   text-align:center;
+   margin-bottom:0px;
+   border-bottom:2px solid black;
+   border-top:2px solid black;
+}
+#carButton{
+   padding-left:5px;
+   margin-top:0px;
+}
+#ape-right{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    border-left: 5px solid black;
+
+}
+#ape-upper-left{
+    flex:3;
+}
+#ape-lower-left{
+    border-top:2px solid black;
+    padding-top:5;
+    flex:1;
+    overflow-y:auto;
+}
+form{
+    padding:5px;
+}
+p{
+   margin-top:1px;
+   margin-bottom:1px;
+}
+#ape-upper-right{
+    flex:3;
+    display:flex;
+    flex-direction: column;
+}
+#ape-lower-right{
+    border-top:2px solid black; 
+    flex:1;
+}
+a{
+    color:#000000;
+}
+.hidden{
+   height:0px;
+   width:0px;
+   display:none;
+}

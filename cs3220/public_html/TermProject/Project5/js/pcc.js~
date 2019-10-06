@@ -1,0 +1,27 @@
+function swapClasses(mybutton){
+   //set the buttons right
+   $(".settings-button-selected").addClass("settings-button");
+   $(".settings-button-selected").removeClass("settings-button-selected");
+   mybutton.addClass("settings-button-selected");
+   mybutton.removeClass("settings-button");
+   //set the content right
+   var string = (mybutton.attr('id')).substring(0,(mybutton.attr('id')).length-5);
+   $(".slider").removeClass("hidden");
+   $(".slider").addClass("hidden");
+   $("#"+string).removeClass("hidden");
+}
+$(document).ready(function(){
+   $(".settings-button").click(function(){
+      swapClasses($(this));
+   });
+   $(".settings-button-selected").click(function(){
+      swapClasses($(this));
+   });
+   $("#anotherUser").click(function(){
+      var numOfUsers = $('#newUsers tr').length;
+      var string = '<tr><td><input type="text" name="display_name'+numOfUsers+'"></td>';
+      string +='<td><input type="text" name="username'+numOfUsers+'"></td>';
+      string +='<td><input type="text" name="url_tag'+numOfUsers+'"></td>';
+      $("#newUsers > tbody:last").append(string);
+   });
+});

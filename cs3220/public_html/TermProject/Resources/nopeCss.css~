@@ -1,0 +1,6 @@
+html{
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    background:#ccccff;
+}

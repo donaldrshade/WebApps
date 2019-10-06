@@ -2,7 +2,7 @@
 <html lang="en" >
     <meta charset="utf-8">
     <head>
-        <title>Donald Shade</title>
+        <title>95%</title>
         <link rel="stylesheet" href="Resources/myCss.css" type="text/css">
         <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script src="Resources/menu.js"></script>
@@ -11,7 +11,7 @@
     </head>
     <body onload="getQuote()"> 
         <div class = "header" >
-            <h1>DSHADE</h1>
+            <h1>95%</h1>
             <div id="quote"></div>
             <div id="author" ></div>
             <!--<button type="button" onclick="getQuote()">New Quote</button>-->
@@ -23,6 +23,7 @@
                     <select id="menuList" onchange="updateOption()">
                         <option>Project1</option>
                         <option>Project2</option>
+                        <option>Project3</option>
                     </select>
                 </form>
             </div>
@@ -32,13 +33,15 @@
             <a href = "TermProject/Project1.html"><div class = "nav-link">Project 1</div></a>
             <a href = "TermProject/Project2.html"><div class = "nav-link">Project 2</div></a>
             <a href = "TermProject/Project3.html"><div class = "nav-link">Project 3</div></a>
-            <a href = "TermProject/Project4.html"><div class = "nav-link">Project 4</div></a>
-            <a href = "TermProject/Project5.html"><div class = "nav-link">Project 5</div></a>
+            <a href = "TermProject/Project4.php"><div class = "nav-link">Project 4</div></a>
+            <a href = "TermProject/Project5/Project5.php"><div class = "nav-link">Project 5</div></a>
             <a href = "TermProject/Project6.html"><div class = "nav-link">Project 6</div></a>
             <a href = "TermProject/Project7.html"><div class = "nav-link">Project 7</div></a>
         </div>
         <div class="content">
-            The content will go here once I figure something out...
+            I finally found the perfect content. The most beautiful image in history. Perfect for my site.
+            <p><img id='amazing_image' class ='hidden' src = 'Resources/gallaghd.jpg'>
+            <p><button id='big_reveal' onclick="toggleImage()">Click to unviel.</button>
         </div>
         <div class = "footer" >
             

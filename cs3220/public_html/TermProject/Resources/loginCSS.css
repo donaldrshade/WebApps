@@ -1,0 +1,32 @@
+html{
+    height: 100%;
+    align-content: center;
+    background:var(--background);
+    --main-color:#77bbdd;
+    --background:#ccccff;
+    --borders:#000000;
+    --accent-color-1:#88ccee;
+    --accent-color-2:#99ddff;
+}
+.login{
+   flex:1;
+   padding:10px;
+   border-style:solid;
+   border-width:20px;
+   border-radius:10px;
+   border-color:var(--main-color);
+   display:flex;
+   flex-direction:row;
+   
+}
+body{
+   display:flex;
+}
+.center{
+   flex:1;
+   display:inline-flex;
+   flex-direction:column;
+}
+.error{
+   color:#ff0000;
+}

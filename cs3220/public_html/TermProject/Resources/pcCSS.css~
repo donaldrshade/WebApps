@@ -1,0 +1,43 @@
+body{
+    background-image: url("background.jpg");
+    background-color: #000000;
+    margin:5px;
+}
+.banner{
+    margin:auto;
+    padding:0;
+    display:block;
+    width:75%;
+}  
+#welcome{
+    width:100%;
+}
+.greeting{
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.interactionButtons{
+    display:flex;
+    flex-direction: vertical;
+}
+.login{
+    flex:1;
+    padding-left: 5px;
+    color:#ffffff;
+    font-size: large;
+}
+.view{
+    display:flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    flex:1;
+    padding-left: 5px;
+    color:#ffffff;
+    font-size: large;
+}
+.button{
+    margin:5px;
+}

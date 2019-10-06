@@ -1,0 +1,7 @@
+function pc(){
+   header("Location: http://judah.cedarville.edu/peopleschoice/index.php");
+   console.log("pc");
+}
+function home(){
+   header("Location: ../cs3220.html");
+}

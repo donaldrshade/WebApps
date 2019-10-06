@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	var keys     = [];
-	var konami  = '83,72,65,68,69';
+	var code = '83,72,65,68,69';
 	$(document)
 		.keydown(
 			function(e) {
 				keys.push( e.keyCode );
-				if ( keys.toString().indexOf( konami ) >= 0 ){
+				if ( keys.toString().indexOf( code ) >= 0 ){
 					// do something when the konami code is executed
 					change_bg();
 					// empty the array containing the key sequence entered by the user
@@ -16,5 +16,10 @@ $(document).ready(function() {
 	});
 
 function change_bg() {
-		alert("You found the easter egg!")
+   $("html").css("background-image","url('http://judah.cedarville.edu/~shade/Resources/astro-background.jpg')");
+   console.log("attempted to change background. Did it work?");
+}
+function toggleImage(){
+   $('#amazing_image').toggleClass('hidden');
+   console.log("help");
 }

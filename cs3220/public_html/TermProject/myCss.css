@@ -1,0 +1,60 @@
+html{
+    height: 100%
+}
+body{
+    background-color: #000099;
+    margin: auto;
+    height:90%;
+}
+.header{
+    border-bottom: 5px solid black;
+    text-align: center;
+    padding-bottom: 5;
+    color: #FFFFFF;
+    max-height: 100px;
+}
+.content{
+    height:100%;
+    padding: 0;
+    background: #ccccff;
+    display: flex;
+    flex-direction: row;
+    height: fill;
+    height:inherit;
+}
+.nav{
+    flex:1;
+    flex-direction: column;
+    border-right: 5px solid black;
+    text-decoration-color: aqua;
+    text-align: center;
+}
+.body{
+    flex:4;
+    display: flex;
+    padding-left:5;
+
+}
+.footer{
+    color:aliceblue;
+    border-top: 5px solid black;
+    padding-top: 5;
+    padding-left:5;
+    align-self:  bottom;
+}
+#nav{
+    list-style: none;
+}
+h1{
+    align-content: center;
+    text-align: center
+}
+a:link{
+    color: #0000cc;
+}
+a:visited{
+    color: #9900cc;
+}
+a:hover{
+    color: #990000;
+}

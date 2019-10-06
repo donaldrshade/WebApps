@@ -4,7 +4,10 @@ var quotes = [
     'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.',
     'Machines take me by surprise with great frequency.',
     'Mathematical reasoning may be regarded...',
-    'We are not interested in the fact that the brain has the consistency of cold porridge.'
+    'We are not interested in the fact that the brain has the consistency of cold porridge.',
+    'If life is not funny, you are doing it wrong.',
+    'Time is subject to God',
+    'If you want grace, go to God.'
 ]
 
 var author = [
@@ -13,7 +16,10 @@ var author = [
     '-Alan Turing',
     '-Alan Turing',
     '-Alan Turing',
-    '-Alan Turing'
+    '-Alan Turing',
+    '-Donald Shade',
+    '-Dalton Deffenbaugh',
+    'Dr. Gallagher'
 ]
 /*global document:false */
 function getQuote(){

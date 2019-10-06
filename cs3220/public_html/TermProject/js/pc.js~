@@ -1,0 +1,17 @@
+$('#view').click(function(){
+    console.log("This is the view function!")
+});
+$('#login').click(function(){
+    console.log("This is the login function!")
+});
+$(document).ready(function(){
+   $.ajax({
+      url: getPCData.php,
+      type: 'GET',
+      dataType:'json'
+    }).success( function(data){
+      createTable(data.users);
+      initProjectView(data.projects);
+      initUsers(data.users);
+   });
+});
